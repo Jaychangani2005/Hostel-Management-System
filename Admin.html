@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Admin</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#dashboard" onclick="showSection('dashboard')">Dashboard</a></li>
+                <li><a href="#students" onclick="showSection('students')">Manage Students</a></li>
+                <li><a href="#rooms" onclick="showSection('rooms')">Rooms</a></li>
+                <li><a href="#bookings" onclick="showSection('bookings')">Bookings</a></li>
+                <li><a href="#settings" onclick="showSection('settings')">Settings</a></li>
+                <li><a href="#logout" onclick="showSection('logout')">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Dashboard</h1>
+            </header>
+            <section id="dashboard" class="content-section">
+                <h2>Dashboard</h2>
+                <p>Overview of the system metrics and recent activities.</p>
+                <!-- Add dashboard content here -->
+            </section>
+            <section id="students" class="content-section" style="display:none;">
+                <h2>Manage Students</h2>
+                <button onclick="showForm('addStudentForm')">Add Student</button>
+                <button onclick="showForm('deleteStudentForm')">Delete Student</button>
+                <button onclick="showForm('searchStudentForm')">Search Student</button>
+                <div id="addStudentForm" class="form-container" style="display:none;">
+                    <h3>Add Student</h3>
+                    <form>
+                        <label for="studentName">Name:</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                        <label for="studentBirthDate">Birth Date:</label>
+                        <input type="date" id="studentBirthDate" name="studentBirthDate" required>
+                        <label for="studentMobile">Mobile No:</label>
+                        <input type="tel" id="studentMobile" name="studentMobile" required>
+                        <label for="studentEmail">Email:</label>
+                        <input type="email" id="studentEmail" name="studentEmail" required>
+                        <label for="studentParentsNo">Parents' Mobile No:</label>
+                        <input type="tel" id="studentParentsNo" name="studentParentsNo" required>
+                        <label for="studentFatherName">Father's Name:</label>
+                        <input type="text" id="studentFatherName" name="studentFatherName" required>
+                        <label for="studentMotherName">Mother's Name:</label>
+                        <input type="text" id="studentMotherName" name="studentMotherName" required>
+                        <label for="studentAddress">Address:</label>
+                        <input type="text" id="studentAddress" name="studentAddress" required>
+                        <label for="studentRoom">Room No:</label>
+                        <input type="text" id="studentRoom" name="studentRoom" required>
+                        <label for="studentCollege">College Name:</label>
+                        <input type="text" id="studentCollege" name="studentCollege" required>
+                        <label for="studentDepartment">Department:</label>
+                        <input type="text" id="studentDepartment" name="studentDepartment" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="deleteStudentForm" class="form-container" style="display:none;">
+                    <h3>Delete Student</h3>
+                    <form>
+                        <label for="deleteStudentId">Student ID:</label>
+                        <input type="text" id="deleteStudentId" name="deleteStudentId" required>
+                        <button type="submit">Delete</button>
+                    </form>
+                </div>
+                <div id="searchStudentForm" class="form-container" style="display:none;">
+                    <h3>Search Student</h3>
+                    <form>
+                        <label for="searchStudentId">Student ID:</label>
+                        <input type="text" id="searchStudentId" name="searchStudentId" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <!-- Add student management content here -->
+            </section>
+            <section id="rooms" class="content-section" style="display:none;">
+                <h2>Rooms</h2>
+                <p>Manage rooms.</p>
+                <button onclick="showForm('addRoomForm')">Add Room</button>
+                <div id="addRoomForm" class="form-container" style="display:none;">
+                    <h3>Add Room</h3>
+                    <form>
+                        <label for="roomNumber">Room Number:</label>
+                        <input type="text" id="roomNumber" name="roomNumber" required>
+                        <label for="capacity">Capacity:</label>
+                        <input type="number" id="capacity" name="capacity" required>
+                        <label for="price">Price:</label>
+                        <input type="text" id="price" name="price" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <!-- Add room management content here -->
+            </section>
+            <section id="bookings" class="content-section" style="display:none;">
+                <h2>Bookings</h2>
+                <p>Manage bookings.</p>
+                <button onclick="showForm('addBookingForm')">Add Booking</button>
+                <div id="addBookingForm" class="form-container" style="display:none;">
+                    <h3>Add Booking</h3>
+                    <form>
+                        <label for="userId">User ID:</label>
+                        <input type="text" id="userId" name="userId" required>
+                        <label for="roomId">Room ID:</label>
+                        <input type="text" id="roomId" name="roomId" required>
+                        <label for="startDate">Start Date:</label>
+                        <input type="date" id="startDate" name="startDate" required>
+                        <label for="endDate">End Date:</label>
+                        <input type="date" id="endDate" name="endDate" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <!-- Add booking management content here -->
+            </section>
+            <section id="settings" class="content-section" style="display:none;">
+                <h2>Settings</h2>
+                <p>System settings.</p>
+                <!-- Add settings content here -->
+            </section>
+            <section id="logout" class="content-section" style="display:none;">
+                <h2>Logout</h2>
+                <p>You have been logged out.</p>
+                <!-- Add logout content here -->
+            </section>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
