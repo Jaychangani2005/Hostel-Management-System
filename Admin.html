@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="admin.css">
 </head>
+
 <body>
     <div class="dashboard-container">
         <aside class="sidebar">
@@ -17,6 +19,8 @@
                 <li><a href="#students" onclick="showSection('students')">Manage Students</a></li>
                 <li><a href="#rooms" onclick="showSection('rooms')">Rooms</a></li>
                 <li><a href="#bookings" onclick="showSection('bookings')">Bookings</a></li>
+                <li><a href="#addInstruction" onclick="showSection('addInstruction')">Add Instruction</a></li>
+                <!-- New Menu Item -->
                 <li><a href="#settings" onclick="showSection('settings')">Settings</a></li>
                 <li><a href="#logout" onclick="showSection('logout')">Logout</a></li>
             </ul>
@@ -28,6 +32,46 @@
             <section id="dashboard" class="content-section">
                 <h2>Dashboard</h2>
                 <p>Overview of the system metrics and recent activities.</p>
+
+
+                <div class="cardalin">
+
+                    <div class="card">
+                        <div class="content-card">
+                            <p class="heading">Totel Student
+                            </p>
+                            <p class="para">
+                                25
+                            </p>
+                            <button class="btn">View All ➜</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content-card">
+                            <p class="heading">Totel Rooms
+                            </p>
+                            <p class="para">
+                                9
+                            </p>
+                            <button class="btn">More Info ➜</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content-card">
+                            <p class="heading">Totel Employees
+                            </p>
+                            <p class="para">
+                                15
+                            </p>
+                            <button class="btn">More Info ➜</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
                 <!-- Add dashboard content here -->
             </section>
             <section id="students" class="content-section" style="display:none;">
@@ -60,7 +104,7 @@
                         <input type="text" id="studentCollege" name="studentCollege" required>
                         <label for="studentDepartment">Department:</label>
                         <input type="text" id="studentDepartment" name="studentDepartment" required>
-                        <button type="submit">Submit</button>
+                        <button type="submit"><span>Submit</span></button>
                     </form>
                 </div>
                 <div id="deleteStudentForm" class="form-container" style="display:none;">
@@ -68,7 +112,7 @@
                     <form>
                         <label for="deleteStudentId">Student ID:</label>
                         <input type="text" id="deleteStudentId" name="deleteStudentId" required>
-                        <button type="submit">Delete</button>
+                        <button type="submit"><span>Delete</span></button>
                     </form>
                 </div>
                 <div id="searchStudentForm" class="form-container" style="display:none;">
@@ -76,7 +120,7 @@
                     <form>
                         <label for="searchStudentId">Student ID:</label>
                         <input type="text" id="searchStudentId" name="searchStudentId" required>
-                        <button type="submit">Search</button>
+                        <button type="submit"><span>Search</span></button>
                     </form>
                 </div>
                 <!-- Add student management content here -->
@@ -94,7 +138,7 @@
                         <input type="number" id="capacity" name="capacity" required>
                         <label for="price">Price:</label>
                         <input type="text" id="price" name="price" required>
-                        <button type="submit">Submit</button>
+                        <button type="submit"><span>Submit</span></button>
                     </form>
                 </div>
                 <!-- Add room management content here -->
@@ -114,10 +158,36 @@
                         <input type="date" id="startDate" name="startDate" required>
                         <label for="endDate">End Date:</label>
                         <input type="date" id="endDate" name="endDate" required>
-                        <button type="submit">Submit</button>
+                        <button type="submit"><span>Submit</span></button>
                     </form>
                 </div>
                 <!-- Add booking management content here -->
+            </section>
+            <section id="addInstruction" class="content-section" style="display:none;"> <!-- New Section -->
+                <h2>Add Instruction</h2>
+                <button onclick="showForm('addRuleForm')">Add Rule</button>
+                <button onclick="showForm('addPhotoForm')">Add Photo</button>
+                <div id="addRuleForm" class="form-container" style="display:none;">
+                    <h3>Add Rule</h3>
+                    <form>
+                        <label for="ruleTitle">Rule Title:</label>
+                        <input type="text" id="ruleTitle" name="ruleTitle" required>
+                        <label for="ruleDescription">Description:</label>
+                        <textarea id="ruleDescription" name="ruleDescription" required></textarea>
+                        <button type="submit"><span>Submit</span></button>
+                    </form>
+                </div>
+                <div id="addPhotoForm" class="form-container" style="display:none;">
+                    <h3>Add Photo</h3>
+                    <form>
+                        <label for="photoTitle">Photo Title:</label>
+                        <input type="text" id="photoTitle" name="photoTitle" required>
+                        <label for="photoUpload">Upload Photo:</label>
+                        <input type="file" id="photoUpload" name="photoUpload" accept="image/*" required>
+                        <button type="submit"><span>Submit</span></button>
+                    </form>
+                </div>
+                <!-- Add instruction management content here -->
             </section>
             <section id="settings" class="content-section" style="display:none;">
                 <h2>Settings</h2>
@@ -133,4 +203,5 @@
     </div>
     <script src="admin.js"></script>
 </body>
+
 </html>

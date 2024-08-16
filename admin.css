@@ -17,7 +17,7 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #2c3e50;
+    background-color: #061728;
     color: #ecf0f1;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ body {
 }
 
 .sidebar-menu a:hover {
-    background-color: #34495e;
+    background-color: #0d2a49;
 }
 
 .main-content {
@@ -65,7 +65,7 @@ body {
 }
 
 .header {
-    background-color: #3498db;
+    background-color: #102539;
     color: #fff;
     padding: 10px 20px;
     margin: -20px -20px 20px -20px;
@@ -114,7 +114,7 @@ body {
     border-radius: 5px;
 }
 
-.form-container button {
+/* .form-container button {
     padding: 10px;
     background-color: #3498db;
     color: #fff;
@@ -126,4 +126,181 @@ body {
 
 .form-container button:hover {
     background-color: #2980b9;
+} */
+
+
+
+/* From Uiverse.io by NorthFishHasNa */
+
+.form-container button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 16px 0;
+}
+
+.form-container button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.form-container button span:after {
+    content: '»';
+    font-weight: 800;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+
+.form-container button:hover span {
+    padding-right: 15px;
+}
+
+
+.form-container button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.cardalin {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(104, 104, 104, 0.6);
+    padding: 32px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    background-color: #212121;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 20px; */
+    color: #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content-card .heading {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.content-card .para {
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.content-card .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover::before {
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.content-card .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+}
+
+.content-card .btn:active {
+    box-shadow: none;
+}
+
+
+/* All Button  */
+button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    padding: 12px 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.55) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
 }
