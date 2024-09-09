@@ -1,0 +1,4 @@
+1) Install Xampp Package for Apache and mysql
+2) Create a Database name hostel
+3) Find Databse/hostel.sql file and copy and paste in mysql
+4) Now you a ready to use project
