@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Admin Add Employee</title>
+    <title>Admin Room Reallocation</title>
 </head>
 
 <body>
@@ -23,6 +23,9 @@
             
             $sql2="UPDATE `roomsallocation` SET `allocationStatus`='Occupied',`studentId`='$studentId' WHERE  `roomNo` = '$roomNo' AND `bedNo` = '$bedNo'";
             $result2=mysqli_query($conn,$sql2);
+
+            $sql3="UPDATE students SET `roomNo`='$roomNo' WHERE id='$studentId'";
+            $result3=mysqli_query($conn,$sql3);
         }
         echo "<script>window.location.href ='Admin.php'</script>"; 
     }
