@@ -35,6 +35,12 @@
 
             $sql3="UPDATE `roomsallocation` SET `studentId`='$secondStudentId' WHERE `roomNo`='$room1' and `bedNo`='$bed1'";
             $result3=mysqli_query($conn,$sql3);
+
+            $sql4="UPDATE students SET `roomNo`='$room2' WHERE id='$firstStudentId'";
+            $result4=mysqli_query($conn,$sql4);
+
+            $sql5="UPDATE students SET `roomNo`='$room1' WHERE id='$secondStudentId'";
+            $result5=mysqli_query($conn,$sql5);
         }
         echo "<script>window.location.href ='Admin.php'</script>"; 
     }
