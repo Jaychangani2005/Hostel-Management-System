@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Student</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#profile" onclick="showSection('profile')">Profile</a></li>
+                <li><a href="#roomDetails" onclick="showSection('roomDetails')">Room Details</a></li>
+                <li><a href="#rules" onclick="showSection('rules')">Rules</a></li>
+                <li><a href="#announcements" onclick="showSection('announcements')">Announcements</a></li>
+                <li><a href="#feedback" onclick="showSection('feedback')">Submit Feedback</a></li>
+                <li><a href="#logout" onclick="showSection('logout')">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Student Dashboard</h1>
+            </header>
+            <section id="profile" class="content-section">
+                <h2>Profile</h2>
+                <div class="profile-info">
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Birth Date:</strong> 15 July 2000</p>
+                    <p><strong>Mobile No:</strong> 9876543210</p>
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>Parents' Mobile No:</strong> 9123456780</p>
+                    <p><strong>Father's Name:</strong> Mr. Doe</p>
+                    <p><strong>Mother's Name:</strong> Mrs. Doe</p>
+                    <p><strong>Address:</strong> 123, XYZ Street, City, Country</p>
+                    <p><strong>Room No:</strong> 101</p>
+                    <p><strong>College Name:</strong> ABC College</p>
+                    <p><strong>Department:</strong> Computer Science</p>
+                    <!-- <button onclick="editProfile()">Edit Profile</button> -->
+                </div>
+            </section>
+
+            <section id="roomDetails" class="content-section" style="display:none;">
+                <h2>Room Details</h2>
+                <p>Room Number: 101</p>
+                <p>Capacity: 4</p>
+                <p>Room Type: Super Deluxe</p>
+                <!-- Add more room details content -->
+            </section>
+            <section id="rules" class="content-section" style="display:none;">
+                <h2>Hostel Rules</h2>
+                <ul>
+                    <li>Rule 1: No loud noises after 10 PM.</li>
+                    <li>Rule 2: Keep your room clean and tidy.</li>
+                    <!-- Add more rules -->
+                </ul>
+            </section>
+            <section id="announcements" class="content-section" style="display:none;">
+                <h2>Announcements</h2>
+                <p>No announcements at the moment.</p>
+                <!-- Add announcements content -->
+            </section>
+            <section id="feedback" class="content-section" style="display:none;">
+                <h2>Submit Feedback</h2>
+                <form>
+                    <label for="feedbackText">Your Feedback:</label>
+                    <textarea id="feedbackText" name="feedbackText" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section id="logout" class="content-section" style="display:none;">
+                <h2>Logout</h2>
+                <p>You have been logged out.</p>
+            </section>
+        </main>
+    </div>
+    <script src="Student.js"></script>
+</body>
+
+</html>
