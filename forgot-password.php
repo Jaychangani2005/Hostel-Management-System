@@ -81,8 +81,8 @@
                     $mail->isSMTP();                                      // Set mailer to use SMTP
                     $mail->Host       = 'smtp.gmail.com';                // Specify main SMTP server
                     $mail->SMTPAuth   = true;                             // Enable SMTP authentication
-                    $mail->Username   = 'hostelatib@gmail.com';          // Your Gmail email address
-                    $mail->Password   = 'kwpc qhay eydk bqse';             // Your generated App Password
+                   // $mail->Username   = '';          // Your Gmail email address
+                  //  $mail->Password   = '';             // Your generated App Password
                     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption
                     $mail->Port       = 587;                              // TCP port to connect to
 
