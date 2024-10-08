@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<title>Hostal</title>
+<title>Darshan Hostel</title>
 <html lang="en">
 
 <head>
@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Poiret One" rel="stylesheet" type="text/css">
 
+    <!-- Footer -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
     <!-- Rooms -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,9 +35,9 @@
 
 </head>
 
-<div class="container-fluid" style="background-color: #222222;">
-    <nav class="navbar navbar-inverse" style="border-color: #222222; margin-bottom:0; font-size: 20px;margin: 6px;">
-        <div class="container-fluid">
+<div class="container-fluid" style="background-color: #282d40;">
+    <nav class="navbar navbar-inverse" style="border-color: #282d40; margin-bottom:0;background-color: #282d40; font-size: 20px;margin: 6px;font-family: auto;">
+    <div class="container-fluid">
             <div class="navbar-header">
                 <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse">
                     <span class="icon-bar"></span>
@@ -57,11 +59,11 @@
                                 <li><a href="#">dropdown</a></li>
                             </ul>
                         </li> -->
-                    <li class=""><a href="index.php">Home</a></li>
+                    <li class=""><a href="#">Home</a></li>
                     <li><a href="#" onclick="scrollToSection('about')">About Us</a></li>
                     <li><a href="#" onclick="scrollToSection('facility')">Facility</a></li>
                     <li><a href="#" onclick="scrollToSection('rooms')">Rooms</a></li>
-                    <li><a href="#" onclick="scrollToSection('contact')">Contact Us</a></li>
+                    <li><a href="Contact.php" onclick="scrollToSection('contact')">Contact Us</a></li>
 
                 </ul>
 
@@ -85,12 +87,12 @@
 <!-- Slider -->
 <div class="slider">
     <div class="slides">
-        <img src="img/massslider.png" alt="Image 1">
+        <img src="img/151428288502.jpg" alt="Image 1">
         <img src="img/gymslider2.avif" alt="Image 2">
         <img src="img/sportsroomslider.jpg" alt="Image 3">
         <img src="img/tvroomslider.jpg" alt="Image 4">
         <img src="img/gardenslider.jpg" alt="Image 5">
-        <img src="img/151428288502.jpg" alt="Image 6">
+        <img src="img/massslider.png" alt="Image 6">
 
     </div>
     <button class="prev_button">&larr;</button>
@@ -104,12 +106,12 @@
         <span></span>
     </div>
     <div class="slider_texts">
-        <div class="active">Hostal Dinning Area</div>
+        <div class="active">Darshan Hostel</div>
         <div>GYM </div>
-        <div>Sport Room</div>
+        <div>Sport's Room</div>
         <div>TV Room</div>
         <div>Garden Area</div>
-        <div>Building</div>
+        <div>Hostel Dinning Area</div>
     </div>
 </div>
 
@@ -128,8 +130,7 @@
                     successful student life. Our supportive staff and vibrant community make it easy to feel at home.
             </div>
             <div class="image">
-                <img src="https://images.unsplash.com/photo-1615552713642-73c367c8915c?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="groceries_image">
+                <img src="img/151428288501.jpg" alt="groceries_image">
             </div>
         </div>
     </div>
@@ -189,42 +190,44 @@
             <main>
                 <!-- <div class="bg"> <img src="/Portal/img/bg.jpg" alt=""></div>
             <!-- <img src="/Portal/img/Delux Room.jpg" alt=""> -->
-                <div class="card"> -->
-                    <img src="img/Super Delux Room.jpg" alt="">
+                <div class="card">
+                    <img src="img/Hostel-1.jpg" alt="">
                     <div class="card-content">
                         <h2>
                             Super Delux Room
                         </h2>
                         <p>
-                            Enjoy our Super Deluxe Room with a TV, air conditioning, fridge, and other features to make your stay extra comfortable.
+                            Enjoy our Super Deluxe Room with a TV, air conditioning, fridge, and other features to make
+                            your stay extra comfortable.
 
                         </p>
-                        <!-- <a href="#" class="button">
+                        <a href="Super_Delux_Room.php" class="button">
                             Find out more
                             <span class="material-symbols-outlined">
                                 arrow_right_alt
                             </span>
-                        </a> -->
+                        </a>
                     </div>
                 </div>
 
 
                 <div class="card">
-                    <img src="img/Delux Room.jpg" alt="">
+                    <img src="img/js-girls-hostel-chhawani-indore-hostels-for-women-diq8pze4h6.avif" alt="">
                     <div class="card-content">
                         <h2>
                             Delux Room
                         </h2>
                         <p>
-                            Stay cool and relaxed in our Deluxe Room, which comes with air conditioning for a pleasant experience.
+                            Stay cool and relaxed in our Deluxe Room, which comes with air conditioning for a pleasant
+                            experience.
 
                         </p>
-                        <!-- <a href="#" class="button">
+                        <a href="Delux_Room.php" class="button">
                             Find out more
                             <span class="material-symbols-outlined">
                                 arrow_right_alt
                             </span>
-                        </a> -->
+                        </a>
                     </div>
                 </div>
 
@@ -232,21 +235,22 @@
 
 
                 <div class="card">
-                    <img src="img/Standard Room.jpg" alt="">
+                    <img src="img/219-Thumbnail_1.jpg" alt="">
                     <div class="card-content">
                         <h2>
                             Standard Room
                         </h2>
                         <p>
-                            Our Standard Room is a budget-friendly option with all the basics you need, but without air conditioning.
+                            Our Standard Room is a budget-friendly option with all the basics you need, but without air
+                            conditioning.
 
                         </p>
-                        <!-- <a href="#" class="button">
+                        <a href="Standard_Room.php" class="button">
                             Find out more
                             <span class="material-symbols-outlined">
                                 arrow_right_alt
                             </span>
-                        </a> -->
+                        </a>
                     </div>
                 </div>
             </main>
@@ -301,6 +305,75 @@
         </div>
     </div>
 </section>
+
+
+<section>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Darshan <span>Hostel</span></h3>
+
+            <p>The Perfect Home Base for Your Academic Journey!</p>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                <!-- <a href="#" onclick="scrollToSection('about')">About Us</a>
+            <a href="#" onclick="scrollToSection('facility')">Facility</a> -->
+                <a href="Delux_Room.php" onclick="scrollToSection('rooms')">Rooms</a>
+                <a href="Contact.php" onclick="scrollToSection('contact')">Contact Us</a>
+
+            </p>
+
+            <!-- <p class="footer-company-name">Company Name © 2015</p> -->
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Off Charusat University changa</span> Valetva cross road, Changa,<span>Gujarat 388421</span>
+                </p>
+            </div>
+            <br>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p><span>JC ~</span>+91 94088 42056</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:jaychangani2005@gmail.com">jaychangani2005@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <!-- <span>About the company</span> -->
+                Experience premium living with modern amenities at our hostel. Your comfort and convenience are our top
+                priority.
+                <br>
+                Contact as for inquiries and bookings.
+            </p>
+            <hr>
+            <!-- <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div> -->
+
+        </div>
+
+    </footer>
+</section>
+
+
 
 <!-- back to top -->
 <a class="back-to-top js-back-to-top" href="#" data-offset="100">
