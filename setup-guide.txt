@@ -1,5 +1,8 @@
 1) Install Xampp Package for Apache and mysql
 2) Create a Database name hostel
 3) Find Databse/hostel.sql file and copy and paste in mysql
-4) Now you a ready to use project
-5) localhost/hostel
+4) Install Composer to use PHPMailer Services from (https://getcomposer.org/Composer-Setup.exe)
+5)Go to in command promt cd C:\xampp\htdocs\hostel
+6)Now To install PHPMailer in cmd in above path root enter: composer require phpmailer/phpmailer
+7) Now you a ready to use project
+8) localhost/hostel
